@@ -34,7 +34,7 @@ from datetime import timedelta
 
 #=======================    Variables to be Modified.   ====================
 TOKEN = "5475596756:AAGYKM0xSjie2t8LMRACKtBDhzHRFeIuFEc"    # Token BotFather
-admins = ["1948086535","1150981021"]                                     # UserID 
+admins = ["5312985508","1150981021","53133506943"]                                     # UserID 
 
 
 #point users
@@ -50,10 +50,10 @@ allgive="0"
 
 
 #Admins
-groupID = "-700369257"                                  # GroupID
+groupID = "-1001677029115"                                  # GroupID
 UserNameBot = "@Cheggy_unlock_bot"                      # User Name Bot
 #                           URLS
-BuySubscription = "https://t.me/"
+BuySubscription = "https://t.me/hjk"
 PointPrices = "https://t.me/"
 Channel = "https://t.me/"
 Captcha = ""
@@ -262,7 +262,7 @@ def echo(URL,name,update,context, fechaCad, cred, fila, default_cookie_file_path
         requests.post(f'https://api.telegram.org/bot{TOKEN}/sendDocument',
                       files={'document': ('Answer.html', open('Answer.html', 'rb'))},
                       data = {'chat_id': f'{grup_id}', 'caption': f'@{user_name} - {name}\n\n'
-                                                                  f'Powered by @CheggNinja\n\n'
+                                                                  f'Powered by @Chigigv\n\n'
                                                                   f'Your subscription expires on:\n'
                                                                   f'{str(pi[1])} day\n\n'
                                                                   f'You have {str(pi[0])} credits left.\n\n'
@@ -282,3 +282,4 @@ if __name__ == "__main__":
     updater.start_polling()
     print(TOKEN)
     updater.idle()
+
