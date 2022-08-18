@@ -33,8 +33,8 @@ from datetime import timedelta
 
 
 #=======================    Variables to be Modified.   ====================
-TOKEN = "5472237530:AAFF-6b32wtMuGVSFMVic19Xtin8LLKWWH8"    # Token BotFather
-admins = ["5312985508","1150981021","53133506943"]                                     # UserID 
+TOKEN = "5242936074:AAHwFl0lBidcoPBKEONpKF_fHuA529JES14"    # Token BotFather
+admins = ["5169338448","5444149521","53133506943","1659320313","881718397"]                                     # UserID 
 
 
 #point users
@@ -50,8 +50,8 @@ allgive="0"
 
 
 #Admins
-groupID = "-1001677029115"                                  # GroupID
-UserNameBot = "@Cheggy_unlock_bot"                      # User Name Bot
+groupID = "-1001500309886"                                  ##GroupID
+UserNameBot = "@VIPCheg_bot"                      # User Name Bot
 #                           URLS
 BuySubscription = "https://t.me/hjk"
 PointPrices = "https://t.me/"
@@ -240,10 +240,10 @@ def chegg(update, context):
     if text.startswith("https://www.chegg.com/homework-help/questions-and-answers/") or text.startswith("https://www.chegg.com/homework-help/"):
         pi=get_point(update.effective_user['id'])
         if  int(pi[0])<=0 or int(pi[1]) <=0:
-            update.message.reply_text("not have points")
+            update.message.reply_text("Your subscription has expired, please renew to continue. DM @VIPCheg_Support to buy!")
         else:
             Downloader.sd(text, "w", update, context, 1, 1,1, "Answer.html")
-
+            boton = InlineKeyboardButton(text='🎓 Join the Channel', url=f'{Channel}')
 
 
 def echo(URL,name,update,context, fechaCad, cred, fila, default_cookie_file_path):
@@ -262,14 +262,14 @@ def echo(URL,name,update,context, fechaCad, cred, fila, default_cookie_file_path
         requests.post(f'https://api.telegram.org/bot{TOKEN}/sendDocument',
                       files={'document': ('Answer.html', open('Answer.html', 'rb'))},
                       data = {'chat_id': f'{grup_id}', 'caption': f'@{user_name} - {name}\n\n'
-                                                                  f'Powered by @Chigigv\n\n'
+                                                                  f'Powered by @VIPCheg\n'
                                                                   f'Your subscription expires on:\n'
                                                                   f'{str(pi[1])} day\n\n'
                                                                   f'You have {str(pi[0])} credits left.\n\n'
                               })
         remove("Answer.html")
         requests.post(f'https://api.telegram.org/bot{TOKEN}/sendMessage', data={'chat_id': f'{grup_id}', 'text': f'I will be available in 60 Seconds. ⏱️'})
-        time.sleep(2)
+        time.sleep(60)
         requests.post(f'https://api.telegram.org/bot{TOKEN}/sendMessage', data={'chat_id': f'{grup_id}', 'text': f"I'm Ready ✅"})
     else:
         update.message.reply_text(f"{name}, NO RESPONSE.")
@@ -282,4 +282,3 @@ if __name__ == "__main__":
     updater.start_polling()
     print(TOKEN)
     updater.idle()
-
