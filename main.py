@@ -48,5 +48,5 @@ async def on_message(message):
             await message.delete()
         #await asyncio.wait(3)
             os.remove(path=path)
-bot.run('OTg1MzA1NTc4MTI3NjUwODc3.GBVq8u.g2cuhPLpZjngwlLfT8BUtMr__-2qAA5lymQW3o')  
+bot.run('OTg1MzA1NTc4MTI3NjUwODc3.GdgCUf.AWbPeiD9c58EhKXnV_l6id3go89EpbOXDA2mWU')  
 
