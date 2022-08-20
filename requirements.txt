@@ -39,3 +39,4 @@ siaskynet
 gunicorn
 pymongo
 python-dateutil
+"pymongo[srv]"
