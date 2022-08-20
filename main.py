@@ -33,8 +33,8 @@ from datetime import timedelta
 
 
 #=======================    Variables to be Modified.   ====================
-TOKEN = "5242936074:AAHwFl0lBidcoPBKEONpKF_fHuA529JES14"    # Token BotFather
-admins = ["5169338448","5444149521","53133506943","1659320313","881718397"]                                     # UserID 
+TOKEN = "5600801087:AAEJ_OHf1vFPN1r_AhfZFcadIo7hmYeJi90"    # Token BotFather
+admins = ["","5444149521","1659320313"]                                     # UserID 
 
 
 #point users
@@ -50,8 +50,8 @@ allgive="0"
 
 
 #Admins
-groupID = "-1001500309886"                                  ##GroupID
-UserNameBot = "@VIPCheg_bot"                      # User Name Bot
+groupID = "-1001532911502"                                  ##GroupID
+UserNameBot = "@VIPChegBot"                      # User Name Bot
 #                           URLS
 BuySubscription = "https://t.me/hjk"
 PointPrices = "https://t.me/"
