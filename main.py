@@ -33,7 +33,7 @@ from datetime import timedelta
 
 
 #=======================    Variables to be Modified.   ====================
-TOKEN = "5600801087:AAEJ_OHf1vFPN1r_AhfZFcadIo7hmYeJi90"    # Token BotFather
+TOKEN = "5600801087:AAEJ_OHf1vFPN1r_AhfZFcadIo7hmYeJi9"    # Token BotFather
 admins = ["","5444149521","1659320313"]                                     # UserID 
 
 
