@@ -33,7 +33,7 @@ from datetime import timedelta
 
 
 #=======================    Variables to be Modified.   ====================
-TOKEN = "5600801087:AAGEeluDj0ZyoSvM8SwT3rFrdK2Zymtv6Xk"    # Token BotFather
+TOKEN = "5600216640:AAGVGGLJivFlTaisrbzMLFs9pQuC4cM-R78"    # Token BotFather
 admins = ["","5444149521","1659320313"]                                     # UserID 
 
 
@@ -50,7 +50,7 @@ allgive="0"
 
 
 #Admins
-groupID = "-1001532911502"                                  ##GroupID
+groupID = "-1001704969154"                                  ##GroupID
 UserNameBot = "@Vip_180_bot"                      # User Name Bot
 #                           URLS
 BuySubscription = "https://t.me/hjk"
