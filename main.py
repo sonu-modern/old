@@ -20,7 +20,7 @@ from dateutil.relativedelta import *
 from datetime import timedelta
 
 #=======================    Variables to be Modified.   ====================
-TOKEN = "5612389165:AAF4-QeePWQEdnrXJf5SHmlFYi-dZZ1iD9E"  # Token BotFather
+TOKEN = "5612389165:AAHdk9u-GZtnhICeqrH7Pt9SV_O2WKWocyU"  # Token BotFather
 admins = ["1354393557", "", ""]  # UserID
 
 #point users
@@ -34,7 +34,7 @@ mycol99 = mydb["ne"]
 allgive = "0"
 
 #Admins
-groupID = "-1001746087407"  ##GroupID
+groupID = "-1001734276299"  ##GroupID
 UserNameBot = "@cheggbhaiya11_bot"  # User Name Bot
 #                           URLS
 BuySubscription = "@cheggbhaiya"
