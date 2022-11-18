@@ -14,7 +14,7 @@ def sd(URL,name,update,context,a,fechaCad, cred, fila):
     :return: Nothing
     :rtype: None
     """
-    x = random.randint(1,2)
+    x = random.randint(1,1)
     print(x)
     if x == 1:
         conf = json.loads(read_text('cheggscraper', 'conf1.json'))
